@@ -73,7 +73,7 @@ const countriesData = [
     qrcode: "./welcome/qrcode.png",
   },
 ];
-export default function Hero4() {
+export default function QRcodeHover() {
   return (
     <div className="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6 md:mt-20 mt-10 ">
       <div className="">
@@ -85,7 +85,7 @@ export default function Hero4() {
           easily connect with language partners globally
         </p>
       </div>
-      <div className="flex  overflow-x-auto p-4  flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
+      <div className="flex  overflow-x-auto flex-wrap justify-center gap-3 sm:gap-4 lg:gap-6">
         {countriesData.map((item, index) => (
           <div key={index} className="group cursor-pointer shrink-0">
             <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl w-40 sm:w-65.5 h-50 sm:h-90">

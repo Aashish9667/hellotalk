@@ -87,7 +87,7 @@ const rightimages = [
   },
 ];
 import Marquee from "react-fast-marquee";
-export default function World() {
+export default function BgWorld() {
   return (
     <div className=" my-10 md:my-40 relative">
       <div className=" absolute inset-0 flex items-center justify-center">

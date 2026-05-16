@@ -1,6 +1,6 @@
 "use client"
 
-export default function Fot() {
+export default function Footer() {
   return (
     <>
     <hr  className="mb-4"/>

@@ -2,7 +2,7 @@
 import { FaApple } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import CountUp from "react-countup";
-export default function Hero2() {
+export default function Hero() {
   return (
     <div className="mt-20">
       <div className="lg:flex lg:justify-between lg:gap-1 lg:flex-nowrap  flex flex-wrap justify-center items-center">
@@ -75,7 +75,7 @@ export default function Hero2() {
             </h1>
 
             <p className="text-xs sm:text-base md:text-lg text-center text-gray-500/90">
-              <span className="inline sm:hidden">Regd Users</span>
+              <span className="inline sm:hidden">Users</span>
               <span className="hidden sm:inline">Registered Users</span>
             </p>
           </div>

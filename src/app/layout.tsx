@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Providers } from "./provider";
+import Footer from "@/component/footer/footer";
+import Navigation from "@/component/welcome/navigation";
 import "./globals.css";
-import Script from "next/script"; // Script tag use karne ke liye
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,28 +26,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased p-5`}>
-        {/* 1. Google Translate ka Dropdown yahan dikhega */}
-        <div id="google_translate_element" className="mb-5"></div>
-
-        {children}
-
-        {/* 2. Google Translate Scripts */}
-        <Script id="google-translate-config" strategy="afterInteractive">
-          {`
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'hi,en,ko,ja,zh-CN', // Jo languages aapko chahiye
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-              }, 'google_translate_element');
-            }
-          `}
-        </Script>
-        <Script 
-          src="//://translate.google.com"
-          strategy="afterInteractive"
-        />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Providers>
+          <div id="google_translate_element">
+            <div>
+              <Navigation />
+            </div>
+            <div className="p-5">{children}</div>
+            <div className="p-5 mx-auto max-w-7xl">
+              <Footer />
+            </div>
+          </div>
+        </Providers>
       </body>
     </html>
   );
