@@ -34,8 +34,8 @@ export default function RootLayout({
             <div>
               <Navigation />
             </div>
-            <div className="p-5">{children}</div>
-            <div className="p-5 mx-auto max-w-7xl">
+            <div className="p-5 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">{children}</div>
+            <div className="p-5 mx-auto max-w-7xl bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
               <Footer />
             </div>
           </div>

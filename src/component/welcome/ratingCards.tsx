@@ -70,7 +70,7 @@ export default function RatingCards() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-xl">
             {users.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white  p-5  border  rounded-lg ">
+                <div className="bg-white dark:bg-gray-800 p-5  border  rounded-lg ">
                   <div className="flex text-yellow-300 px-3 py-2 ">
                     <FaStar />
                     <FaStar />
@@ -78,12 +78,12 @@ export default function RatingCards() {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <h1 className="text-xl font-bold p-3">{item.topic}</h1>
-                  <p className="text-lg px-3 pb-3">{item.description}</p>
-                  <p className="text-md px-3 text-gray-500/80">
+                  <h1 className="text-xl font-bold p-3 ">{item.topic}</h1>
+                  <p className="text-lg px-3 pb-3 ">{item.description}</p>
+                  <p className="text-md px-3 text-gray-500/80 ">
                     {item.username}
                   </p>
-                  <p className="text-sm px-3 text-gray-500/80">
+                  <p className="text-sm px-3 text-gray-500/80 ">
                     {item.laguage}
                   </p>
                 </div>
@@ -93,7 +93,7 @@ export default function RatingCards() {
         </Swiper>
         <div
           className="my-custom-pagination mt-6 flex justify-center  [&_.swiper-pagination-bullet-active]:w-5 
-    [&_.swiper-pagination-bullet-active]:h-5 "
+    [&_.swiper-pagination-bullet-active]:h-5"
         ></div>
       </div>
     </div>

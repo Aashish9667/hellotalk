@@ -61,19 +61,20 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem className="hidden md:flex">
-          <NavigationMenuTrigger>All Features</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuTrigger className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800">All Features</NavigationMenuTrigger>
+          <NavigationMenuContent className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800">
             <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component, index) => (
                 <ListItem
-                  key={component.title}
+                  key={index}
                   title={component.title}
                   href={component.href}
-                    className={
-            index === 6
-              ? "border-t pt-2 mt-2 border-muted/500"
-              : ""
-          }
+          //           className={
+          //   index === 6
+          //     ? "border-t pt-2 mt-2 border-muted/500"
+          //     : ""
+          // }
+          className="!important dark:hover:bg-gray-800"
                 >
                   {component.description}
                 </ListItem>
@@ -82,8 +83,8 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="hidden md:flex">
-          <NavigationMenuTrigger>Discoverd</NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuTrigger className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800">Discoverd</NavigationMenuTrigger>
+          <NavigationMenuContent className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 ">
             <ul className="w-80 grid grid-cols-2 gap-2">
               <ListItem href="/docs" title="Find Partners">
                 Match with compatible language partners 
@@ -99,7 +100,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem className="hidden md:flex">
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">About Hello Talk</Link>
+            <Link href="/docs" className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800">About Hello Talk</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

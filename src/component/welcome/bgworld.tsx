@@ -100,7 +100,7 @@ export default function BgWorld() {
               <span className="text-violet-700 text-center">Search</span> the
               World
             </h1>
-            <p className="text-center sm:text-lg lg:text-xl text-gray-500">
+            <p className="text-center sm:text-lg lg:text-xl text-gray-500 dark:text-gray-100 dark:font-semi-bold">
               Search for language partners by native language, city, and more
             </p>
           </div>

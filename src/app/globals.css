@@ -154,3 +154,9 @@
   list-style: none;
   z-index: 1;
 }
+
+.dark .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: #4b5563 !important; /* bg-gray-800 */
+  opacity: 0.5; /* Inactive bullet ko thoda light dikhane ke liye */
+  margin: 0 4px
+}

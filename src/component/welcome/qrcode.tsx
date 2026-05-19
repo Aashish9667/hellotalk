@@ -103,7 +103,7 @@ export default function QRcodeHover() {
                   <img
                     src={item.qrcode}
                     alt="QR Code"
-                    className="bg-white rounded-md lg:p-3 p-1.5 lg:w-35 w-20 md:w-33  transition-all"
+                    className="bg-white  rounded-md lg:p-3 p-1.5 lg:w-35 w-20 md:w-33  transition-all"
                   />
                 </div>
                 <div className="transition-all duration-300 group-hover:-translate-y-10">
@@ -124,7 +124,7 @@ export default function QRcodeHover() {
                 <div className="absolute bottom-4 left-2 right-2 transition-all duration-300 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 ">
                   <a
                     href={item.link}
-                    className="inline-flex items-center justify-center w-full h-10 bg-primary text-white rounded-full font-semibold text-sm sm:text-base hover:bg-primary/90 transition-all"
+                    className="inline-flex items-center justify-center w-full h-10 bg-primary text-white dark:text-black rounded-full font-semibold text-sm sm:text-base hover:bg-primary/90 dark:hover:bg-gray-800 transition-all"
                   >
                     Connect Now
                   </a>

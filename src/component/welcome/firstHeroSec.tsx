@@ -14,7 +14,7 @@ export default function Hero() {
             Learn a language for free by chatting with native speakers around
             the world
           </p>
-          <div className="inline-flex p-2 bg-gray-100 rounded-lg  bg-cover">
+          <div className="inline-flex p-2 bg-gray-100 dark:bg-gray-800 rounded-lg  bg-cover">
             <img
               src="./welcome/qrcode.png"
               alt=""
@@ -27,10 +27,10 @@ export default function Hero() {
               </p>
               <p className="pb-3 text-left">Scan to download free app</p>
               <div className="flex gap-3">
-                <button className="bg-white p-1 rounded-md">
+                <button className="bg-white dark:bg-gray-700 p-1 rounded-md">
                   <FaApple size={24} />
                 </button>
-                <button className="bg-white p-1 rounded-md ">
+                <button className="bg-white dark:bg-gray-700 p-1 rounded-md ">
                   <IoLogoAndroid size={25} className="text-green-400" />
                 </button>
               </div>
